@@ -7,6 +7,8 @@ log/
 sumodis.sh
 /scripts/*.txt
 /scripts/*.xls*
+/wallets
+/wallet
 
 # vim swap files
 *.swp
