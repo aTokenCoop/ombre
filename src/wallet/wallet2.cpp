@@ -3221,7 +3221,7 @@ std::vector<std::string> wallet2::addresses_from_url(const std::string& url, boo
 std::string wallet2::address_from_txt_record(const std::string& s)
 {
   // make sure the txt record has "oa1:sumo" and find it
-  auto pos = s.find("oa1:sumo");
+  auto pos = s.find("oa1:k");
 
   // search from there to find "recipient_address="
   pos = s.find("recipient_address=", pos);
