@@ -212,17 +212,17 @@ namespace cryptonote
     // All SumoPulse domains have DNSSEC on and valid
     static const std::vector<std::string> dns_urls =
     {
-	"checkpoints.sumopulse.stream"
-	, "checkpoints.sumopulse.download"
-	, "checkpoints.sumopulse.win"
-	, "checkpoints.sumopulse.bid"
+	"checkpointx.kryptoniumpulse.com"
+	, "checkpointy.kryptoniumpulse.com"
+	, "checkpointz.kryptoniumpulse.com"
+	, "checkpointa.kryptoniumpulse.com"
     };
 
     static const std::vector<std::string> testnet_dns_urls = {
-	"testpoints.sumopulse.stream"
-	, "testpoints.sumopulse.download"
-	, "testpoints.sumopulse.win"
-	, "testpoints.sumopulse.bid"
+	"testpointsx.sumopulse.stream"
+	, "testpointsy.kryptoniumpulse.com"
+	, "testpointsz.kryptoniumpulse.com"
+	, "testpointsa.kryptoniumpulse.com"
     };
 
     std::vector<std::vector<std::string> > records;
