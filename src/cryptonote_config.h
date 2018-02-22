@@ -55,14 +55,14 @@
 #define BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW_V2            12
 
 // MONEY_SUPPLY - total number coins to be generated
-#define MONEY_SUPPLY                                    ((uint64_t)1000000000000000000) // 1 billion.
+#define MONEY_SUPPLY                                    ((uint64_t)177000000000000000) // 177 million.
 #define EMISSION_SPEED_FACTOR                           21
 #define FINAL_SUBSIDY                                   ((uint64_t)10000000000) // 1 * pow(10, 9)
 #define GENESIS_BLOCK_REWARD                            ((uint64_t)1000000000)
 
-#define CRYPTONOTE_PROJECT_BLOCK_REWARD                 0.02 // Percentage of the total block reward.
+#define CRYPTONOTE_PROJECT_BLOCK_REWARD                 0.07 // Percentage of the total block reward.
 // Initial dev fee - drops down rapidly and averages to CRYPTONOTE_PROJECT_BLOCK_REWARD over time
-#define CRYPTONOTE_PROJECT_INITIAL_MULTIPLIER           0.06
+#define CRYPTONOTE_PROJECT_INITIAL_MULTIPLIER           0.09
 #define CRYPTONOTE_PROJECT_BLOCK_ADDRESS                "cashLnfXjoDie63ATqEzm5dHheJjxjpwjAJHU4AToKyL2kQ12L4mxbkNr7Uaoxh14fgGCB1mzUEyiP3KBBdXwDGA2goiR3t5cs"
 #define CRYPTONOTE_PROJECT_BLOCK_VIEWKEY                "52e98b6167d9f6f8611613cef475b706beebc5ddf2a2ade37cc32b9660fa9101"
 #define CRYPTONOTE_REWARD_BLOCKS_WINDOW                 60
@@ -153,16 +153,16 @@ namespace config
   uint64_t const BASE_REWARD_CLAMP_THRESHOLD = ((uint64_t)100000); // pow(10, 5)
   std::string const P2P_REMOTE_DEBUG_TRUSTED_PUB_KEY = "0000000000000000000000000000000000000000000000000000000000000000";
 
-  uint64_t const CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0xe1f54;            // cash
-  uint64_t const CRYPTONOTE_PUBLIC_INTEGRATED_ADDRESS_BASE58_PREFIX = 0xe9f54; // casi
-  uint64_t const CRYPTONOTE_PUBLIC_SUBADDRESS_BASE58_PREFIX = 0x1b19a;         // Suba
-  uint16_t const P2P_DEFAULT_PORT = 19743;
-  uint16_t const RPC_DEFAULT_PORT = 19744;
+  uint64_t const CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 6jZ;            // K
+  uint64_t const CRYPTONOTE_PUBLIC_INTEGRATED_ADDRESS_BASE58_PREFIX = 19; 
+  uint64_t const CRYPTONOTE_PUBLIC_SUBADDRESS_BASE58_PREFIX = 42;         
+  uint16_t const P2P_DEFAULT_PORT = 54000;
+  uint16_t const RPC_DEFAULT_PORT = 58080;
 
   boost::uuids::uuid const NETWORK_ID = { {
-      0x04, 0x06, 0xdf, 0xce, 0xfc, 0x7c, 0x27, 0x4a, 0x24, 0xd4, 0xf3, 0x8d, 0x43, 0x44, 0x45, 0x41
+      0x8d, 0x06, 0x7c, 0x27, 0xdf, 0xce, 0xfc, 0xa8, 0x04, 0x4a, 0x24, 0x42, 0x44, 0x60, 0xd4, 0xf3
     } }; // Bender's nightmare
-  std::string const GENESIS_TX = "013c01ff00018094ebdc0302f7c7fcac5d4a4829f5c49c86061f4cedf9f1ae904ce86f7eb9c2b83666a0e46d210102b03a3668c0c4354e7057ba4e0acd672aa9965be9d4f5e803f8e84b583b890c";
+  std::string const GENESIS_TX = "";
   uint32_t const GENESIS_NONCE = 10000;
 
   namespace testnet
@@ -176,7 +176,7 @@ namespace config
     boost::uuids::uuid const NETWORK_ID = { {
         0x12, 0x04, 0x06, 0xdf, 0xce, 0xfc, 0x7c, 0x27, 0x4a, 0x24, 0xd4, 0xf3, 0x41, 0x42, 0x44, 0x45
       } }; // Bender's daydream
-    std::string const GENESIS_TX = "013c01ff0001bbbad6adf00d029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101b20e782a04028cf9326ccd66e0d683f50dd1b261f4e81fac4bfa0c73d0601102";
+    std::string const GENESIS_TX = "";
     uint32_t const GENESIS_NONCE = 10001;
   }
 }
