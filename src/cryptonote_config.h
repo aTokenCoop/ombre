@@ -60,11 +60,11 @@
 #define FINAL_SUBSIDY                                   ((uint64_t)10000000000) // 1 * pow(10, 9)
 #define GENESIS_BLOCK_REWARD                            ((uint64_t)1000000000)
 
-#define CRYPTONOTE_PROJECT_BLOCK_REWARD                 0.07 // Percentage of the total block reward.
+#define CRYPTONOTE_PROJECT_BLOCK_REWARD                 0.06 // Percentage of the total block reward.
 // Initial dev fee - drops down rapidly and averages to CRYPTONOTE_PROJECT_BLOCK_REWARD over time
-#define CRYPTONOTE_PROJECT_INITIAL_MULTIPLIER           0.09
-#define CRYPTONOTE_PROJECT_BLOCK_ADDRESS                "cashLnfXjoDie63ATqEzm5dHheJjxjpwjAJHU4AToKyL2kQ12L4mxbkNr7Uaoxh14fgGCB1mzUEyiP3KBBdXwDGA2goiR3t5cs"
-#define CRYPTONOTE_PROJECT_BLOCK_VIEWKEY                "52e98b6167d9f6f8611613cef475b706beebc5ddf2a2ade37cc32b9660fa9101"
+#define CRYPTONOTE_PROJECT_INITIAL_MULTIPLIER           0.08
+#define CRYPTONOTE_PROJECT_BLOCK_ADDRESS                "1UiDzXmc64FgX6hMMJ5Kxp6WKKyCzhbouQkJWT7TTjhHUynqyDmJsUy6mSya1FvBmPRL5ehUxdwEMRnCYJB2gge2EQNhzYN"
+#define CRYPTONOTE_PROJECT_BLOCK_VIEWKEY                "e66cffecd673c5b32ae15531142628dd559593b8c530700dcf30934468329407"
 #define CRYPTONOTE_REWARD_BLOCKS_WINDOW                 60
 #define CRYPTONOTE_REWARD_BLOCKS_WINDOW                 60
 #define CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE       240 * 1024    // 240kB
